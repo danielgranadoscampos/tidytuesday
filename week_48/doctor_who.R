@@ -1,12 +1,17 @@
+library(datardis)
+library(tidyverse)
+library(ggplot2)
 library(forcats)
 library(showtext)
 library(ggtext)
 library(cowplot)
 library(magick)
+library(lubridate)
 
 
 # data ------------------------------------------------------------------------
 
+?episodes
 
 
 holidays <- episodes %>% 
@@ -78,6 +83,7 @@ p_fin <- p +
   
   theme(plot.subtitle = element_markdown(size = 16, hjust = .05, 
                                          family = "regular"))
+p_fin
 
 ## Backgroung image as in -----------------------------------------------------
 #  https://github.com/nrennie/tidytuesday/blob/main/2021/23-11-2021/23112021.R 

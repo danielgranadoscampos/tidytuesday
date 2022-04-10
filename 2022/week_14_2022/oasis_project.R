@@ -20,11 +20,16 @@ p <- ggplot(news_data, aes(x=year_founded, group=products, fill=products)) +
   xlab("Year founded") + 
   ylab("Density") +
   labs(fill = "Product",
-       title = "How news products have changed based on the year a publication is founded",
+       title = "How news products have changed based on the year the publications were founded",
        caption = "Data:Project Oasis") +
   theme_bw() +
+  theme(plot.title = element_text(size = 30),
+        axis.title = element_text(size = 22),
+        axis.text = element_text(size = 14),
+        legend.text = element_text(size = 14),
+        legend.title =  element_text(size = 14) ) +
   scale_fill_brewer(palette = "Set3")
 
 
-ggsave("oasis_project.png", plot = p, width = 350, height = 300, units = "mm", dpi = "retina")
+ggsave("oasis_project.png", plot = p, width = 430, height = 300, units = "mm", dpi = "retina")
 

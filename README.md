@@ -10,3 +10,5 @@
 ## Week 15 2022
 <img src="2022/week_15_2022/r_indoor_pollution.png" alt = "indoor pollution"/>
 
+## Week 44 2022
+<img src="2022/week_44_2022/r_horror_movies.png" alt = "horror_movies"/>
